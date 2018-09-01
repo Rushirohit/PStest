@@ -104,9 +104,8 @@ $InitialFormWindowState = New-Object System.Windows.Forms.FormWindowState
 #Provide Custom Code for events specified in PrimalForms.
 $Tool_Load={
 
-    $Username = "rushi@nbcuni.onmicrosoft.com"
-    $Password = ConvertTo-SecureString (Get-Content D:\O365.txt) -AsPlainText -Force
-    $Livecred = New-Object System.Management.Automation.PSCredential $Username, $password
+
+    $Livecred = Get-Credential
     $Session = New-PSSession  -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $Livecred -Authentication Basic -AllowRedirection
     Import-PSSession $Session
     Import-Module MSOnline
