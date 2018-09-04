@@ -7,6 +7,16 @@
     <RootNamespace>MyApplication</RootNamespace>
     <AssemblyName>MyApplication</AssemblyName>
     <Name>Multi Purpose Tool</Name>
+    <PackageAsExecutable>True</PackageAsExecutable>
+    <PackageEntryPoint>Multi Purpose Tool.ps1</PackageEntryPoint>
+    <Bundle>True</Bundle>
+    <Obfuscate>True</Obfuscate>
+    <HideConsoleWindow>True</HideConsoleWindow>
+    <DotNetVersion>v4.6.1</DotNetVersion>
+    <FileVersion>1.0</FileVersion>
+    <FileDescription>Office 365 Automation Tool</FileDescription>
+    <ProductName>Office365 Automation Tool</ProductName>
+    <ProductVersion>1.0</ProductVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
